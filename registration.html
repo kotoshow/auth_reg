@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="style-auth.css">
+</head>
+<body>
+	<div class="auth-bg">
+		<div class="auth-box">
+			<div class="title">Регистрация</div>
+			<div class="msg">Неверное имя пользователя или пароль</div>
+			<form class="auth-form" name="auth-form" action="registration.html" method="post">
+				<div class="note">
+					<div class="icon icon-user"></div>
+					<div class="note-text">Имя пользователя</div>
+				</div>
+				<input class="username-input" id="username-input" name="username">
+				<div class="note">
+					<div class="icon icon-password"></div>
+					<div class="note-text">Пароль</div>
+				</div>
+				<div class="password-input-box">
+                    <input class="password-input" id="password-input" name="password" type="password">
+                    <div class="password-visible" id="pass-show">
+                        <div class="icon-password-visible"></div>
+                    </div>
+                </div>
+				<div class="note">
+					<div class="icon icon-password"></div>
+					<div class="note-text">Повторите пароль</div>
+				</div>
+				<div class="password-input-box">
+                    <input class="password-input" id="password-input" name="password" type="password">
+                    <div class="password-visible" id="pass-show">
+                        <div class="icon-password-visible"></div>
+                    </div>
+                </div>
+                <div class="button form-submit" id="form-submit">
+					<p>Зарегистрироваться</p>
+					<div class="loading hide"></div>
+				</div>
+			</form>
+			<div class="auth-hint">Цифровая кафедра ТулГУ. Разработка мобильнх и веб-приложений. Практическое занятие по JS. Мшецян Николай</div>
+		</div>
+	</div>
+</body>
+<script type="module" src="firebase.js">
+
+
+
+  </script>
+<script src="script-reg.js"></script>
+</html>
