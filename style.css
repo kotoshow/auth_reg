@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'new-gen';
+    font-style: normal;
+    src: local("new-gen"),
+         url("fonts/new-gen.woff") format("woff");
+  }
+
+  body {
+	height: 100%;
+	font-family: "new-gen";
+	font-size: 10.5pt;
+	color: white;
+	background: #070707;
+	margin: 0;
+	padding: 0;
+}
+
+.auth-bg {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.auth-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 370px;
+    height: fit-content;
+    background-color: #141414;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+
+.title {
+    font-size: 14pt;
+}
+
+.msg {
+    opacity: 0;
+    margin: 20px 0;
+}
+
+.msg-success {
+    color: #961e1e;
+}
+
+.auth-form {
+    display: block;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+	border: none;
+	background-color: #0c0c0c;
+	color: white;
+	font-family: "new-gen";
+	font-size: 10pt;
+	outline: solid 0px #070707;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: outline 0.1s ease;
+    padding: 0 20px;
+}
+
+input:focus {
+    outline: solid 2px #1461a8;
+}
+
+.password-input-box {
+    display: flex;
+}
+
+.password-input {
+    margin-right: 10px;
+}
+
+.note {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.icon-user {
+	background: center / contain no-repeat url("images/i-user.png");
+}
+
+.icon-password {
+	background: center / contain no-repeat url("images/i-password.svg");
+}
+
+.password-visible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 45px;
+    background-color: #0c0c0c;
+    border-radius: 5px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.icon-password-visible {
+    width: 45%;
+    background: center / contain no-repeat url("images/eye-slash-fill.svg");
+    aspect-ratio: 1 / 1;
+    transition: background 0.1s ease;
+}
+
+.icon-password-show {
+    background: center / contain no-repeat url("images/eye-fill.svg");
+}
+
+.password-visible:hover {
+    background-color: #080808;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background-color: #1461a8;
+    border-radius: 5px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.form-submit {
+    margin-top: 10px;
+    transition: background-color 0.08s ease;
+}
+
+.form-submit:hover {
+    background-color: #093157;
+}
+
+.auth-hint {
+    width: 90%;
+    font-size: 9pt;
+    text-align: center;
+    opacity: 0.8;
+    margin-top: 20px;
+}
