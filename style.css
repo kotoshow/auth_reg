@@ -9,10 +9,32 @@
 	height: 100%;
 	font-family: "new-gen";
 	font-size: 10.5pt;
-	color: white;
+	color: #ffffff;
 	background: #070707;
 	margin: 0;
 	padding: 0;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: -100;
+}
+
+.menu {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu .button {
+    margin-bottom: 10px;
 }
 
 .auth-bg {
@@ -40,12 +62,19 @@
 }
 
 .msg {
-    opacity: 0;
     margin: 20px 0;
 }
 
-.msg-success {
+.msg-error {
     color: #961e1e;
+}
+
+.msg-success {
+    color: #267e1f;
+}
+
+.hide {
+    opacity: 0;
 }
 
 .auth-form {
@@ -79,6 +108,10 @@ input:focus {
 
 .password-input {
     margin-right: 10px;
+}
+
+#password-repeat {
+    margin-right: 0;
 }
 
 .note {
@@ -145,7 +178,7 @@ input:focus {
     transition: background-color 0.08s ease;
 }
 
-.form-submit:hover {
+.button:hover {
     background-color: #093157;
 }
 
@@ -155,4 +188,14 @@ input:focus {
     text-align: center;
     opacity: 0.8;
     margin-top: 20px;
+}
+
+.loading {
+	height: 40%;
+	aspect-ratio: 1 / 1;
+	background: center / contain no-repeat url("images/i-loading.svg");
+}
+
+.display-hide {
+    display: none;
 }
